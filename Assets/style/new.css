@@ -68,7 +68,7 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-    max-width: 1120px;
+    max-width: 1500px;
     margin-inline: 1.5rem;
 }
 
@@ -260,13 +260,11 @@ img {
 /* For large devices */
 @media screen and (min-width: 1150px){
     .container{
-        margin-inline: auto;
+        margin: 20px 120px 0 100px ;
     }
-    /* .content{
-        margin-left: 100px;
-    } */
     .nav{
-        height: calc(var(--header-height) + 2rem);
+        width: 90%;
+        height: var(--header-height);
     }
     .nav__toggle,
     .nav__close{
@@ -275,9 +273,15 @@ img {
     .nav__menu{
         width: initial;
     }
+    .nav__logo {
+        font-size: 1.6rem;
+    }
+    .nav__menu a{
+        font-size: 1.2rem;
+    }
     .nav__list{
         flex-direction: row;
-        column-gap: 4rem;
+        column-gap: 3rem;
     }
     .home__data{
         text-align: initial;
@@ -289,13 +293,16 @@ img {
         margin-bottom: 4.5rem;
     }
     .home__content{
-        max-width: 1120px;
+        max-width: 1450px;
         margin-inline: auto;
         left: 0;
         right: 0;
     }
     .home__social{
-        left: 0;
+        left: 30px;
+    }
+    .home__social-link{
+        font-size: 2rem;
     }
     .swiper-pagination{
         top: 10rem;
